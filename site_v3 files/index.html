@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Elizabeth Warren | Bank on Students</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="js/jquery-1.8.2.min.js"></script>
+        <script src="js/jquery.scrollTo-1.4.3.1.min.js"></script>
+        <script src="js/jquery.scrollorama.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/jquery.scrolldeck.js"></script>
+
+        
+    </head>
+    
+    <body>
+        </a>
+        <div id="header">
+        	<div id="star">★</div>	
+        		<a href="#title" class="nav-button">Start</a>
+        		<a href="#countdown" class="nav-button">July 1st</a>
+        		<a href="#big-debt" class="nav-button">Big Debt</a>
+        		<a href="#big-profit" class="nav-button">Big Profit</a>
+        		<a href="#the-plan" class="nav-button">The Plan</a>
+        	<div id="star">★</div>	
+        </div>
+        
+        
+        
+        <div class="slide" id="title">
+            <img class="animate-build" data-build="1" id="title" src="img/site-header.png">
+            <br>
+            	<h3 class="animate-build" data-build="2">"A bill to prevent the doubling of the interest rate for Federal subsidized student loans..."</h3>
+
+            <p class="animate-build" data-build="3" id="title">Brought to you by:</p>
+            	<h2 class="animate-build" data-build="4"> Elizabeth Warren </h2>
+        </div>
+        
+        
+        
+        
+        <div class="slide" id="countdown">
+            	<h1 class="animate-build" id="title">It's time to act.</h1>
+
+            <br>
+            <br>
+            <br>
+            <script type="text/javascript">
+                dateFuture1 = new Date(2013, 6, 1, 0, 0, 0);
+
+                function GetCount(ddate, iid) {
+
+                    dateNow = new Date(); //grab current date
+                    amount = ddate.getTime() - dateNow.getTime(); //calc milliseconds between dates
+                    delete dateNow;
+
+                    // if time is already past
+                    if (amount < 0) {
+                        document.getElementById(iid).innerHTML = "<p>On July 1st, interest rates for federally subsidized student loans <strong>were doubled.</strong><p>";
+                    }
+                    // else date is still good
+                    else {
+                        days = 0;
+                        hours = 0;
+                        mins = 0;
+                        secs = 0;
+                        out = "";
+
+                        amount = Math.floor(amount / 1000); //kill the "milliseconds" so just secs
+
+                        days = Math.floor(amount / 86400); //days
+                        amount = amount % 86400;
+
+                        hours = Math.floor(amount / 3600); //hours
+                        amount = amount % 3600;
+
+                        mins = Math.floor(amount / 60); //minutes
+                        amount = amount % 60;
+
+                        secs = Math.floor(amount); //seconds
+
+                        if (days != 0) {
+                            out += "<div id='time-label'>In </div>" + days + " " + ((days == 1) ? "<div id='time-label'>day </div>" : "<div id='time-label'>days </div>") + "<div id='time-label'>, </div>";
+                        }
+                        if (hours != 0) {
+                            out += hours + " " + ((hours == 1) ? "<div id='time-label'>hour </div>" : "<div id='time-label'>hours </div>") + "<div id='time-label'>, </div>";
+                        }
+                        out += mins + " " + ((mins == 1) ? "<div id='time-label'>minute and </div>" : "<div id='time-label'>minutes and </div>") + " ";
+                        out += secs + " " + ((secs == 1) ? "<div id='time-label'>second </div>" : "<div id='time-label'>seconds </div>") + "<p id='time-label'><br>Interest rates for federally subsidized student loans <strong>will double.</strong> </p>  ";
+                        out = out.substr(0, out.length - 2);
+                        document.getElementById(iid).innerHTML = out;
+
+                        setTimeout(function () {
+                            GetCount(ddate, iid)
+                        }, 1000);
+                    }
+                }
+
+                window.onload = function () {
+                    GetCount(dateFuture1, 'countbox1');
+                    //you can add additional countdowns here (just make sure you create dateFuture2 and countbox2 etc for each)
+                };
+            </script>
+            <p class="animate-build" data-build="2" id="countbox1"></p>
+            <br>
+            <br>
+            <img class="half-img" src="img/time-bg.png">
+        </div>
+        
+        
+        
+        
+        <div class="slide" id="blackboard">
+        	<img class="half-img animate-build" data-build="1" data-animation="fly-in-left" src="img/students-graph.png">
+        	<img class="half-img animate-build" data-build="1" data-animation="fly-in-right" src="img/banks-graph.png">
+        	<div class="float-container">
+                <div class="float-left bb-text animate-build" data-build="2" id="bb-text1">Interest rates for students will jump from 3.4 to 6.8 percent.</div>
+                <div class="float-right bb-text animate-build" data-build="3" id="bb-text2">That's 9x what big banks pay to loan money from the government.</div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="slide" id="big-debt">
+            	<h1 class="animate-build" data-build="1">Student debt is huge. Why make it bigger?</h1>
+
+            <br>
+            <p class="animate-build" data-build="2">Student debt in the United States is nearly $1 trillion.
+                <br>That's more than all U.S. credit card debt combined.</p>
+            <br>
+            <div class="float-container">
+                	<img class="half-img animate-build" data-build="3" src="img/1t.png">
+                	<img class="half-img animate-build" data-build="4" src="img/credit-card.png">
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="slide" id="house">
+        	<h1 class="animate-build" data-build="1">Why is that a big deal?</h1>
+        	<br>
+        	<br>
+        	<p class="vert-align animate-build" data-build="2" id="house-text">The burden of loans keeps young Americans from buying homes, saving for retirement, and engaging in consumption that will <strong>jump-start our economy.</strong></p>
+        </div>
+        
+        
+        
+        
+        <div class="slide" id="big-profit">
+        	<div>
+        	<h1 class="animate-build" data-build="1">Interest rates for students are already too high.</h1>
+                    <p class="animate-build" data-build="2">While students struggle to repay their debt,<br> the government is making money on its student loan programs.</p>
+                	<p class="animate-build" data-build="3">Estimated government profits on student loans in 2013:</p> 
+                	<p class="animate-build" data-build="4" id="figure">$34 billion.<p>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="slide" id="thats-enough">
+        	<p class="animate-build bb-text" data-build="1" id="bb-text3">That's enough to pay for every college student's textbooks <strong>for a year.</strong></p>
+        	<br>
+        	<div class="float-container">
+                	<img class="half-img animate-build" data-build="2" src="img/number-defs.png">
+                	<img class="half-img animate-build" data-build="3" src="img/equation.png">
+            </div>
+            <br>
+        </div>
+        
+        
+        <div class="slide" id="warren">
+        		<img class="animate-build" data-build="1" data-animation="fly-in-left" src="img/warren.png">
+                <div class="float-right animate-build" data-animation="fly-in-right" data-build="1" id="quote-text" style="padding-right:10%;">
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>"The Federal Government is going to charge students interest rates nine times higher than the rates they charge the biggest banks. The same banks that destroyed millions of jobs and nearly broke the economy. <strong>That isn't right.</strong>"</p>
+                <p>Sen. Elizabeth Warren</p>
+	            </div>
+        
+        </div>
+        
+        <div class="slide" id="the-plan">
+        	<h1>The Plan:</h1>
+        	<p class="animate-build" data-build="1" id="plan1">Set interest rates for government loans to students at the same level as government loans to banks.</p>
+                	<p class="animate-build" data-build="2" id="plan2">Fund the Department of Education's Stafford Loans program the same way that we fund government loans to big banks: The Federal Reserve.</p>
+        </div>
+        
+        
+        
+        <div class="slide" id="take-action">
+        	<h1 id="take-action-text">Tell Congress to take Action.</h1>
+                <br>
+                <br>
+                <div><p>Tell your representative that it's time to stop charging students and their families nine times as much for loans as big banks.</p></div>
+	                <form action="http://www.house.gov/htbin/findrep">
+	                	<label>
+	                		Search for your representative by zip-code:
+	                		<br>
+	                		<br>
+	                	<input name="ZIP">
+	                	</label>
+	                	<input type="submit">
+	                </form>
+            </div>
+        </div>
+        
+        <script>
+            $(document).ready(function () {
+
+                var deck = new $.scrolldeck({
+                        buttons: '.nav-button',
+                        easing: 'easeInOutExpo'
+                    });
+
+                // add other animations using the scrolldeck.controller (see Scrollorama plugin)
+                console.log(deck.controller);
+                deck.controller.animate('#instructions', {
+                        duration: 100,
+                        property: 'opacity',
+                        end: 0
+                    });
+
+            });
+        </script>
+    </body>
+
+</html>
