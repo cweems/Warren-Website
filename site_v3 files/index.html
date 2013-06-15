@@ -5,6 +5,7 @@
     <head>
         <meta charset="utf-8">
         <title>Elizabeth Warren | Bank on Students</title>
+
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css" type="text/css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -77,7 +78,14 @@
         
     </head>
     
+    
     <body>
+    <script type="text/javascript">
+	        if (screen.width <= 699) {
+		        document.location = "http://www.google.com";
+		        }		 
+	</script>
+    
         </a>
         <div id="header">
         	<div id="star">★</div>	
@@ -180,20 +188,20 @@
         
         
         <div class="slide" id="warren">
-        		<img class="animate-build" data-build="1" data-animation="fly-in-left" src="img/warren.png">
+        		<img class="animate-build" data-build="1" data-animation="fly-in-left" id="warren-cutout" src="img/warren.png">
                 <div class="float-right animate-build" data-animation="fly-in-right" data-build="1" id="quote-text" style="padding-right:10%;">
                 <br>
                 <br>
                 <br>
                 <br>
-                <p>"The Federal Government is going to charge students interest rates nine times higher than the rates they charge the biggest banks. The same banks that destroyed millions of jobs and nearly broke the economy. <strong>That isn't right.</strong>"</p>
+                <p id="right-quote">"The Federal Government is going to charge students interest rates nine times higher than the rates they charge the biggest banks.<br> The same banks that destroyed millions of jobs and nearly broke the economy. <strong>That isn't right.</strong>"</p>
                 <p>Sen. Elizabeth Warren</p>
 	            </div>
-        
+	            <div class="animate-build" data-build="2"></div>
         </div>
         
         <div class="slide" id="the-plan">
-        	<h1>The Plan:</h1>
+        	<img class="half-img"  id="the-fed" src="img/fed.png"><h1>The Plan:</h1><img class="half-img"  id="the-fed" src="img/college.png">
         	<p class="animate-build" data-build="1" id="plan1">Set interest rates for government loans to students at the same level as government loans to banks.</p>
                 	<p class="animate-build" data-build="2" id="plan2">Fund the Department of Education's Stafford Loans program the same way that we fund government loans to big banks: The Federal Reserve.</p>
         </div>
