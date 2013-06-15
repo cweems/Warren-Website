@@ -15,41 +15,8 @@
         <script src="js/jquery.scrolldeck.js"></script>
 
         
-    </head>
-    
-    <body>
-        </a>
-        <div id="header">
-        	<div id="star">★</div>	
-        		<a href="#title" class="nav-button">Start</a>
-        		<a href="#countdown" class="nav-button">July 1st</a>
-        		<a href="#big-debt" class="nav-button">Big Debt</a>
-        		<a href="#big-profit" class="nav-button">Big Profit</a>
-        		<a href="#the-plan" class="nav-button">The Plan</a>
-        	<div id="star">★</div>	
-        </div>
         
-        
-        
-        <div class="slide" id="title">
-            <img class="animate-build" data-build="1" id="title" src="img/site-header.png">
-            <br>
-            	<h3 class="animate-build" data-build="2">"A bill to prevent the doubling of the interest rate for Federal subsidized student loans..."</h3>
-
-            <p class="animate-build" data-build="3" id="title">Brought to you by:</p>
-            	<h2 class="animate-build" data-build="4"> Elizabeth Warren </h2>
-        </div>
-        
-        
-        
-        
-        <div class="slide" id="countdown">
-            	<h1 class="animate-build" id="title">It's time to act.</h1>
-
-            <br>
-            <br>
-            <br>
-            <script type="text/javascript">
+         <script type="text/javascript">
                 dateFuture1 = new Date(2013, 6, 1, 0, 0, 0);
 
                 function GetCount(ddate, iid) {
@@ -82,7 +49,8 @@
                         amount = amount % 60;
 
                         secs = Math.floor(amount); //seconds
-
+                        
+                        
                         if (days != 0) {
                             out += "<div id='time-label'>In </div>" + days + " " + ((days == 1) ? "<div id='time-label'>day </div>" : "<div id='time-label'>days </div>") + "<div id='time-label'>, </div>";
                         }
@@ -105,10 +73,46 @@
                     //you can add additional countdowns here (just make sure you create dateFuture2 and countbox2 etc for each)
                 };
             </script>
-            <p class="animate-build" data-build="2" id="countbox1"></p>
+        
+        
+    </head>
+    
+    <body>
+        </a>
+        <div id="header">
+        	<div id="star">★</div>	
+        		<a href="#title" class="nav-button">Start</a>
+        		<a href="#countdown" class="nav-button">July 1st</a>
+        		<a href="#big-debt" class="nav-button">Big Debt</a>
+        		<a href="#big-profit" class="nav-button">Big Profit</a>
+        		<a href="#the-plan" class="nav-button">The Plan</a>
+        	<div id="star">★</div>	
+        </div>
+        
+        
+        
+        <div class="slide" id="title">
+        <p id="prompt">Scroll down to get started.</p>
+            <img class="animate-build" data-build="1" id="title" src="img/site-header.png">
             <br>
-            <br>
-            <img class="half-img" src="img/time-bg.png">
+            	<h3 class="animate-build" data-build="2">"A bill to prevent the doubling of the interest rate for Federal subsidized student loans..."</h3>
+
+            <p class="animate-build" data-build="3" id="title">Brought to you by:</p>
+            	<h2 class="animate-build" data-build="4"> Elizabeth Warren </h2>
+        </div>
+        
+        
+        
+        
+        <div class="slide" id="countdown">
+            <h1 class="animate-in">It's time to act.</h1>
+            	<br>
+            	<br>
+            	<br>
+            	<div class="animate-in" id="countbox1"></div>
+            	<br>
+            	<img class="animate-in" id="student-time" src="img/time-bg.png">
+            	<div class="animate-build" data-build="1"></div>
         </div>
         
         
@@ -215,16 +219,17 @@
         
         <script>
             $(document).ready(function () {
-
+	            var scrollorama = $.scrollorama({ blocks:'.slide' });
                 var deck = new $.scrolldeck({
                         buttons: '.nav-button',
+                        duration: 1000,
                         easing: 'easeInOutExpo'
                     });
 
                 // add other animations using the scrolldeck.controller (see Scrollorama plugin)
                 console.log(deck.controller);
                 deck.controller.animate('#instructions', {
-                        duration: 100,
+                        duration: 1000,
                         property: 'opacity',
                         end: 0
                     });
