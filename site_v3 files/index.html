@@ -75,16 +75,17 @@
                 };
             </script>
         
-        
     </head>
     
     
     <body>
+            
     <script type="text/javascript">
 	        if (screen.width <= 699) {
-		        document.location = "http://www.google.com";
+		        document.location = "/m/";
 		        }		 
 	</script>
+	
     
         </a>
         <div id="header">
@@ -98,17 +99,22 @@
         </div>
         
         
-        
         <div class="slide" id="title">
-        <p id="prompt">Scroll down to get started.</p>
-            <img class="animate-build" data-build="1" id="title" src="img/site-header.png">
-            <br>
-            	<h3 class="animate-build" data-build="2">"A bill to prevent the doubling of the interest rate for Federal subsidized student loans..."</h3>
-
-            <p class="animate-build" data-build="3" id="title">Brought to you by:</p>
-            	<h2 class="animate-build" data-build="4"> Elizabeth Warren </h2>
-        </div>
+        <a class="scroll-down" href="#countdown">
+        <img class="half-image" id="scroll-down" src="img/scroll-down.png">
+        </a>
+        <img id="intro" src="img/site-header.png">
+        <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdev.twitter.com%2Fopensource&related=twitterapi&text=Students%20should%20pay%20less%20for%20loans&tw_p=tweetbutton&url=https%3A%2F%2Fdev.twitter.com%2Fopensource
+">
+        <img class="half-image" id="twitter" src="img/twitter.png">
+        </a>    
         
+            <br>
+            	<h3>"A bill to prevent the doubling of the interest rate for Federal subsidized student loans..."</h3>
+
+            <p id="intro">Brought to you by:</p>
+            	<h2> Elizabeth Warren </h2>
+        </div>
         
         
         
@@ -212,7 +218,7 @@
         	<h1 id="take-action-text">Tell Congress to take Action.</h1>
                 <br>
                 <br>
-                <div><p>Tell your representative that it's time to stop charging students and their families nine times as much for loans as big banks.</p></div>
+                <div class="float-left"><p>Tell your representative that it's time to stop charging students and their families nine times as much for loans as big banks.</p>
 	                <form action="http://www.house.gov/htbin/findrep">
 	                	<label>
 	                		Search for your representative by zip-code:
@@ -222,7 +228,7 @@
 	                	</label>
 	                	<input type="submit">
 	                </form>
-            </div>
+	             </div>
         </div>
         
         <script>
