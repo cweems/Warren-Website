@@ -1,0 +1,630 @@
+/*
+	COLORS
+ 
+	Dark Blue 			#222438
+	Medium Blue			#959db5
+	Light Blue	 		#c9d5e1
+	Dark Blue Links		#1a4a6a
+	
+*/
+
+@font-face {
+	font-family: digital_font;
+	src: url('../fonts/digital.ttf');
+
+}
+
+@font-face {
+	font-family: chalkdust;
+	src: url('../fonts/chalkdust.ttf');
+
+}
+
+
+body {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 30px;
+	font-size: 3rem;
+	text-align: center;
+	background-color: white;
+	color: #444;
+}
+
+button, input[type=text]{
+	font-family: "Open Sans", Arial, sans-serif !important;
+	color: #444;
+	border-radius: 5px;
+}
+
+input[type=text]:a{
+	border-color: red;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"]{
+	background-color: #B61925 !important;
+	color: white !important;
+	border-color: white !important;
+	border-width: .5px
+}
+
+label{
+	width: 80%;
+	margin: 20px auto;
+	margin: 2rem auto;
+	text-shadow: 0 1px 1px #fff;
+	line-height: 1.2;
+}
+
+img {
+	max-width: 95%;
+	max-height: auto;
+}
+
+h1 {
+	font-size: 40px;
+	font-size: 4rem;
+	font-weight: 500;
+	margin: 0;
+	color: white;
+	padding-top: 30px;
+	padding-top: 3rem;
+	padding-bottom: 30px;
+	padding-bottom: 3rem;
+	padding-left: 30px;
+	padding-left: 3rem;
+	padding-right: 30px;
+	padding-right: 3rem;
+	background-color: #3379b5;
+	display: inline-block;
+	font-family: "Open Sans", Arial, sans-serif;
+	border-radius: 3px;
+	border-radius: .3rem;
+	width:100%
+}
+
+h2 {
+	font-size: 40px;
+	font-size: 4rem;
+	margin: 0;
+	padding-top: 15px;
+	padding-top: 1.5rem;
+	padding-bottom: 15px;
+	padding-bottom: 1.5rem;
+	padding-left: 15px;
+	padding-left: 1.5rem;
+	padding-right: 15px;
+	padding-right: 1.5rem;
+	background-color: #B61925;
+	color: white;
+	display: inline-block;
+	border-radius: 3px;
+}
+
+h3 {
+	font-size: 30px;
+	font-size: 3rem;
+	font-style: italic;
+	line-height: 35px;
+	line-height: 3.5rem;
+	font-weight: 200;
+	max-width: 500px;
+	padding-bottom: 30px;
+	padding-bottom: 3rem;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 1px solid #3379b5;
+}
+
+p {
+	width: 80%;
+	margin: 20px auto;
+	margin: 2rem auto;
+	text-shadow: 0 1px 1px #fff;
+	line-height: 1.2;
+}
+
+a, a:visited {
+	color: #1a4a6a;
+	font-weight: bold;
+	font-style: italic;
+	text-shadow: none;
+}
+
+small {
+	line-height: 1;
+	font-style: italic;
+	font-size: 20px;
+	font-size: 2rem;
+	text-shadow: 0 1px 0 #fff;
+}
+
+.download {
+	padding-left: 15px;
+	padding-left: 1.5rem;
+}
+
+.pro-tip {
+	display: block;
+	padding: 20px;
+	padding: 2rem;
+	text-shadow: 0 1px 0 #fff;
+}
+
+pre {
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+blockquote {
+	text-align: left;
+	width: 70%;
+	margin: 10px auto;
+	margin: 1rem auto;
+	background: #fff;
+	border: solid 3px #959db5;
+	padding: 0 40px;
+	padding: 0 4rem;
+	border-radius: 6px;
+	border-radius: .6rem;
+}
+
+code {
+	font-style: normal;
+	padding-left: 5px;
+	padding-left: .5rem;
+}
+
+.float-container{
+	max-width: 700px;
+	max-width: 70rem;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: visible;
+	height: 200px;
+	height: 20rem;
+	padding-bottom: 50px;
+	padding-bottom: 5rem;
+}
+
+.half-img{
+	width:49%;
+	max-width: 300px;
+}
+
+.vert-align{
+	padding-top: 5px;
+}
+
+
+/*----------------------------------------  HEADER  */
+
+
+#star{
+	display: inline-block;
+	color: white;
+	font-size: 14px;
+	font-size: 1.4rem;
+	vertical-align: middle;
+	opacity: 1;
+	-webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+}
+
+#star .load{
+	opacity: 1;
+}
+
+#instructions {
+	position: fixed;
+	top: 25px;
+	left: 40px;
+	background: #fff;
+	border: solid 3px #959db5;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	width: 180px;
+	border-radius: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	z-index: 99;
+	color: #222438
+}
+
+#powered {
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.nav-button {
+	padding: 10px;
+	padding: 1rem;
+	text-decoration: none;
+	color: #A6B1BB;
+	font-size: 20px;
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.current, a.nav-button:hover {
+	color: #fff;
+}
+
+#resize-graphic {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	opacity: .6;
+}
+
+.float-left, .float-right{
+	padding: 10px 0 0 0;
+	position: relative;
+	max-width: 300px;
+	max-width: 30rem;
+	line-height: 1.1 !important;
+}
+
+
+.float-right {
+float: right;
+}
+
+.float-left {
+float: left;
+}
+
+/*----------------------------------------  SLIDES  */
+
+.slide {
+	margin: 0 auto;
+	padding-bottom: 400px !important;
+	padding-bottom: 40rem !important;
+	width: 100%;
+	padding: 90px 0;
+	padding: 9rem 0;
+	height: 40rem;
+	overflow: hidden;
+	}
+
+
+
+#countbox1{
+	width: 85%;
+	color: #B61925;
+	display: inline-block;
+	font-family: 'digital_font';
+	font-size: 50px;
+	font-size: 5rem;
+}
+
+#time-label{
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 30px;
+	font-size: 3rem;
+	text-align: center;
+	background-color: white;
+	color: #444;
+	display: inline;
+}
+
+#figure{
+	font-size: 80px;
+	font-size: 8rem;
+	color: #75d279;
+	font-weight: 700; 
+}
+
+/*----------------------------------------  SLIDES  */
+
+/*----------------------------------------  Scroll-down  */
+
+#title{
+	padding-top: 20px;
+	padding-top: 2rem;
+}
+
+#scroll-down{
+	width:10%;
+	float: left;
+	padding-left: 2%;
+	position: relative;
+}
+
+#scroll-down:hover{
+	width:10%;
+	opacity: .5;
+	cursor: pointer;
+}
+
+#scroll-down-first{
+	width:30%;
+	float: left;
+	padding-left: 10%;
+	position: relative;
+}
+
+#scroll-down-first:hover{
+	width:30%;
+	opacity: .5;
+	cursor: pointer;
+}
+
+/*----------------------------------------  Scroll-down  */
+#twitter{
+	width:10%;
+	float: right;
+	padding-right: 2%;
+	position: relative;
+}
+
+#twitter:hover{
+	width:10%;
+	opacity: .5;
+	cursor: pointer;
+}
+
+#twitter-first{
+	width:30%;
+	float: right;
+	padding-right: 10%;
+	padding-bottom: 10%;
+	position: relative;
+}
+
+#twitter-first:hover{
+	width:30%;
+	opacity: .5;
+	cursor: pointer;
+}
+
+
+/*----------------------------------------  Countdown  */
+
+#student-time{
+
+	width:49%;
+	max-width: 400px;
+	position: left;
+	z-index: 0
+}
+
+
+/*----------------------------------------  blackboard  */
+
+#blackboard{
+	background-image: url('../img/blackboard.jpg');
+	box-shadow: 0px 10px 20px -2px black;
+}
+
+.bb-text{
+	color: white;
+	text-shadow: none !important;
+	font-family: "chalkdust" sans-serif;
+	font-weight: 200;
+}
+
+#bb-text1{
+	color:#ffffff;
+	text-align: right !important; 
+}
+
+#bb-text2{
+	color:#75d279;
+	text-align: left !important;
+}
+
+/*----------------------------------------  Big-Debt  */
+
+#big-debt{
+	
+}
+
+/*----------------------------------------  That's enough  */
+
+#thats-enough{
+	background-image: url('../img/blackboard.jpg');
+	box-shadow: 0px 10px 20px -2px black;
+}
+
+/*---------------------------------------- Warren  */
+
+#warren{
+	box-shadow: 0px 10px 20px -2px black;
+}
+
+#quote-text{
+	color: #3379b5;
+	font-style: italic;
+	font-size: 25px !important;
+	font-size: 2.5rem !important;
+	line-height: 3.5rem;
+	font-weight: 200;
+}
+
+/*----------------------------------------  House  */
+
+#house{
+	background: url('../img/house-bg.png') no-repeat center;
+	box-shadow: 0px 10px 20px -2px black;
+}
+
+#house-text{
+	color: white;
+	max-width: 500px;
+	text-shadow: 0px 2px 9px rgba(0,0,0,0.71);
+}
+
+
+/*---------------------------------------- Quote  */
+
+#warren-cutout{
+	max-width: 50%;
+}
+
+#right-quote{
+	width:100% !important;
+}
+
+/*---------------------------------------- the-plan  */
+
+#the-plan{
+
+}
+
+#the-fed{
+	width: 10%;
+	vertical-align: middle;
+}
+
+#plan1{
+	text-align: left;
+	max-width: 500px;
+	max-width: 50rem;
+}
+
+#plan2{
+	text-align: left;
+	max-width: 500px;
+	max-width: 50rem;
+}
+
+/*---------------------------------------- take-action  */
+
+
+#take-action{
+	background-image: url('../img/dome.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 70px 0 !important;
+	padding: 7rem 0 !important;
+}
+
+#take-action-text{
+	box-shadow: 7px 5px 10px rgba(0,0,0,0.6);
+}
+
+#countdown{
+	height:20rem !important;
+}
+
+
+
+#intro {
+	line-height: .8;
+}
+
+#author {
+	width: 75%;
+	font-size: 20px;
+	font-size: 2rem;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	padding-bottom: 2rem;
+	text-align: right;
+	font-style: italic;
+}
+
+.twitter-follow-button {
+	position: relative;
+	top: 8px;
+	left: 4px;
+}
+
+#animations {
+	padding-top: 70px;
+	padding-top: 7rem;
+	height: 480px;
+	height: 48rem;
+}
+
+#examples h1 {
+	padding-bottom: 20px;
+	padding-bottom: 2rem;
+}
+
+#examples, #examples p, #credits {
+	line-height: .8;
+}
+
+#examples p {
+	padding-top: 20px;
+}
+
+#credits a {
+	padding-right: 3px;
+}
+/*------------------------  BASE-REM SIZING  */
+
+
+@media (min-width: 1401px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 1400px) {
+	html {
+		font-size: 11px;
+	}
+}
+
+/* target screen width  */
+@media (max-width: 1280px) {
+	html {
+		font-size: 10px;
+	}
+}
+	
+@media (max-width: 1160px) {
+	html {
+		font-size: 9px;
+	}
+}
+	
+@media (max-width: 1040px) {
+	html {
+		font-size: 8px;
+	}
+}
+	
+@media (max-width: 920px) {
+	html {
+		font-size: 8px;
+	}
+}
+	
+@media (max-width: 800px) {
+	html {
+		font-size: 8px;
+	}
+}
+	
+@media (max-width: 680px) {
+	html {
+		font-size: 8px;
+	}
+}
+	
+@media (max-width: 560px) {
+	html {
+		font-size: 8px;
+	}
+}
+	
+@media (max-width: 440px) {
+	html {
+		font-size: 8px;
+	}
+}
+
+@media (max-width: 320px) {
+	html {
+		font-size: 8px;
+	}
+}
