@@ -288,7 +288,8 @@ float: left;
 	width: 100%;
 	padding: 90px 0;
 	padding: 9rem 0;
-	height: 40rem;
+	height: 1200px;
+	height: 120rem;
 	overflow: hidden;
 	}
 
@@ -507,10 +508,6 @@ float: left;
 
 #take-action-text{
 	box-shadow: 7px 5px 10px rgba(0,0,0,0.6);
-}
-
-#countdown{
-	height:20rem !important;
 }
 
 
