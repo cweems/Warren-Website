@@ -61,8 +61,8 @@ img {
 }
 
 h1 {
-	font-size: 40px;
-	font-size: 4rem;
+	font-size: 80px;
+	font-size: 8rem;
 	font-weight: 500;
 	margin: 0;
 	color: white;
@@ -79,7 +79,7 @@ h1 {
 	font-family: "Open Sans", Arial, sans-serif;
 	border-radius: 3px;
 	border-radius: .3rem;
-	width:100%
+	max-width:50%
 }
 
 h2 {
@@ -118,10 +118,12 @@ h3 {
 
 p {
 	width: 80%;
-	margin: 20px auto;
-	margin: 2rem auto;
+	margin: 100px auto;
+	margin: 10rem auto;
 	text-shadow: 0 1px 1px #fff;
 	line-height: 1.2;
+	font-size: 70px;
+	font-size: 7rem;
 }
 
 a, a:visited {
@@ -196,7 +198,11 @@ code {
 	padding-top: 5px;
 }
 
-
+.slide-header{
+	background-color: #3379b5;
+	min-height: 300px;
+	min-height: 30rem;
+}
 /*----------------------------------------  HEADER  */
 
 
@@ -286,8 +292,8 @@ float: left;
 	padding-bottom: 400px !important;
 	padding-bottom: 40rem !important;
 	width: 100%;
-	padding: 90px 0;
-	padding: 9rem 0;
+	padding: 30px 0;
+	padding: 3rem 0;
 	height: 1200px;
 	height: 120rem;
 	overflow: hidden;
@@ -300,14 +306,14 @@ float: left;
 	color: #B61925;
 	display: inline-block;
 	font-family: 'digital_font';
-	font-size: 50px;
-	font-size: 5rem;
+	font-size: 100px;
+	font-size: 10rem;
 }
 
 #time-label{
 	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 30px;
-	font-size: 3rem;
+	font-size: 80px;
+	font-size: 8rem;
 	text-align: center;
 	background-color: white;
 	color: #444;
@@ -315,8 +321,8 @@ float: left;
 }
 
 #figure{
-	font-size: 80px;
-	font-size: 8rem;
+	font-size: 150px;
+	font-size: 15rem;
 	color: #75d279;
 	font-weight: 700; 
 }
@@ -331,15 +337,18 @@ float: left;
 }
 
 #scroll-down{
-	width:10%;
+	width:20%;
 	float: left;
 	padding-left: 2%;
+	padding-top: 2%;
 	position: relative;
 }
 
 #scroll-down:hover{
-	width:10%;
+	width:20%;
 	opacity: .5;
+	padding-left: 2%;
+	padding-top: 2%;
 	cursor: pointer;
 }
 
@@ -358,15 +367,19 @@ float: left;
 
 /*----------------------------------------  Scroll-down  */
 #twitter{
-	width:10%;
+	width:20%;
 	float: right;
 	padding-right: 2%;
+	padding-top: 2%;
 	position: relative;
 }
 
 #twitter:hover{
-	width:10%;
+	width:20%;
+	float: right;
 	opacity: .5;
+	padding-right: 2%;
+	padding-top: 2%;
 	cursor: pointer;
 }
 
@@ -434,7 +447,7 @@ float: left;
 }
 
 /*---------------------------------------- Warren  */
-
+;
 #warren{
 	box-shadow: 0px 10px 20px -2px black;
 }
@@ -442,10 +455,13 @@ float: left;
 #quote-text{
 	color: #3379b5;
 	font-style: italic;
-	font-size: 25px !important;
-	font-size: 2.5rem !important;
+	font-size: 60px !important;
+	font-size: 6rem !important;
 	line-height: 3.5rem;
 	font-weight: 200;
+	margin-left:auto;
+	margin-right: auto;
+	max-width: 70%;
 }
 
 /*----------------------------------------  House  */
@@ -453,11 +469,13 @@ float: left;
 #house{
 	background: url('../img/house-bg.png') no-repeat center;
 	box-shadow: 0px 10px 20px -2px black;
+	background-size: 100%;
 }
 
 #house-text{
 	color: white;
-	max-width: 500px;
+	max-width: 900px;
+	max-width: 90rem;
 	text-shadow: 0px 2px 9px rgba(0,0,0,0.71);
 }
 
@@ -474,6 +492,12 @@ float: left;
 
 /*---------------------------------------- the-plan  */
 
+.plan{
+	text-align: left;
+	max-width: 900px;
+	max-width: 90rem;
+}
+
 #the-plan{
 
 }
@@ -481,18 +505,6 @@ float: left;
 #the-fed{
 	width: 10%;
 	vertical-align: middle;
-}
-
-#plan1{
-	text-align: left;
-	max-width: 500px;
-	max-width: 50rem;
-}
-
-#plan2{
-	text-align: left;
-	max-width: 500px;
-	max-width: 50rem;
 }
 
 /*---------------------------------------- take-action  */
@@ -514,6 +526,7 @@ float: left;
 
 #intro {
 	line-height: .8;
+	width: 95%;
 }
 
 #author {

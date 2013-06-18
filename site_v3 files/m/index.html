@@ -53,13 +53,13 @@
                         
                         
                         if (days != 0) {
-                            out += "<div id='time-label'>In </div>" + days + " " + ((days == 1) ? "<div id='time-label'>day </div>" : "<div id='time-label'>days </div>") + "<div id='time-label'>, </div>";
+                            out += "<div id='time-label'>In </div>" + days + " " + ((days == 1) ? "<div id='time-label'>day </div><br>" : "<div id='time-label'>days </div>") + "<div id='time-label'>, </div><br>";
                         }
                         if (hours != 0) {
-                            out += hours + " " + ((hours == 1) ? "<div id='time-label'>hour </div>" : "<div id='time-label'>hours </div>") + "<div id='time-label'>, </div>";
+                            out += hours + " " + ((hours == 1) ? "<div id='time-label'>hour </div>" : "<div id='time-label'>hours </div>") + "<div id='time-label'>, </div><br>";
                         }
-                        out += mins + " " + ((mins == 1) ? "<div id='time-label'>minute and </div>" : "<div id='time-label'>minutes and </div>") + " ";
-                        out += secs + " " + ((secs == 1) ? "<div id='time-label'>second </div>" : "<div id='time-label'>seconds </div>") + "<p id='time-label'><br>Interest rates for federally subsidized student loans <strong>will double.</strong> </p>  ";
+                        out += mins + " " + ((mins == 1) ? "<div id='time-label'>minute and </div><br>" : "<div id='time-label'>minutes and </div><br>") + " ";
+                        out += secs + " " + ((secs == 1) ? "<div id='time-label'>second </div><br>" : "<div id='time-label'>seconds </div><br>") + "<p id='time-label'><br>Interest rates for federally subsidized student loans <strong>will double.</strong> </p>  ";
                         out = out.substr(0, out.length - 2);
                         document.getElementById(iid).innerHTML = out;
 
@@ -102,21 +102,22 @@
         
         
         <div class="slide" id="countdown">
+        <div class="slide-header">
         <a class="scroll-down nav-button" href="#blackboard">
-        	<img class="half-image" id="scroll-down" src="img/scroll-down.png">
+        	<img class="half-image" id="scroll-down" src="img/scroll-down-white.png">
         </a>
         <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdev.twitter.com%2Fopensource&related=twitterapi&text=Students%20should%20pay%20less%20for%20loans&tw_p=tweetbutton&url=https%3A%2F%2Fdev.twitter.com%2Fopensource
 ">
-        <img class="half-image" id="twitter" src="img/twitter.png">
+        <img class="half-image" id="twitter" src="img/twitter-white.png">
         </a>
-            <h1>It's time to act.</h1> 
+            <h1>It's time to act.</h1>
+        </div>
             	<br>
             	<br>
             	<br>
             	<div id="countbox1"></div>
             	<br>
             	<img id="student-time" src="img/time-bg.png">
-            	<div data-build="1"></div>
         </div>
         
         
@@ -136,64 +137,67 @@
                 <div class="float-left bb-text" id="bb-text1">Interest rates for students will jump from 3.4 to 6.8 percent.</div>
                 <div class="float-right bb-text" id="bb-text2">That's 9x what big banks pay to loan money from the government.</div>
             </div>
-            <div data-build="1"></div>
         </div>
         
         
         
         
         <div class="slide" id="big-debt">
+        <div class="slide-header">
         <a class="scroll-down nav-button" href="#house">
-        <img class="half-image" id="scroll-down" src="img/scroll-down.png">
+        <img class="half-image" id="scroll-down" src="img/scroll-down-white.png">
         </a>
         <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdev.twitter.com%2Fopensource&related=twitterapi&text=Students%20should%20pay%20less%20for%20loans&tw_p=tweetbutton&url=https%3A%2F%2Fdev.twitter.com%2Fopensource
 ">
-        <img class="half-image" id="twitter" src="img/twitter.png">
+        <img class="half-image" id="twitter" src="img/twitter-white.png">
         </a> 
             	<h1>Student debt is huge. Why make it bigger?</h1>
-
+         </div>
             <br>
             <p>Student debt in the United States is nearly $1 trillion.
                 <br>That's more than all U.S. credit card debt combined.</p>
             <br>
             
-                	<img class="half-img" data-animation="fly-in-left" src="img/1t.png">
-                	<img class="half-img" data-animation="fly-in-right" src="img/credit-card.png">
+                	<img class="half-img" src="img/1t.png">
+                	<img class="half-img" src="img/credit-card.png">
             
-            <div class="animate-build" data-build="1"></div>
         </div>
         
         
         
         
         <div class="slide" id="house">
+        <div class="slide-header">
         <a class="scroll-down nav-button" href="#big-profit">
-        <img class="half-image" id="scroll-down" src="img/scroll-down.png">
+        <img class="half-image" id="scroll-down" src="img/scroll-down-white.png">
         </a>
         <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdev.twitter.com%2Fopensource&related=twitterapi&text=Students%20should%20pay%20less%20for%20loans&tw_p=tweetbutton&url=https%3A%2F%2Fdev.twitter.com%2Fopensource
 ">
-        <img class="half-image" id="twitter" src="img/twitter.png">
+        <img class="half-image" id="twitter" src="img/twitter-white.png">
         </a> 
         	<h1>Why is that a big deal?</h1>
+        	</div>
         	<br>
         	<br>
         	<p class="vert-align" id="house-text">The burden of loans keeps young Americans from buying homes, saving for retirement, and engaging in consumption that will <strong>jump-start our economy.</strong></p>
-        	<div data-build="1"></div>
         </div>
         
         
         
         
         <div class="slide" id="big-profit">
+        <div class="slide-header">
         <a class="scroll-down nav-button" href="#thats-enough">
-        <img class="half-image" id="scroll-down" src="img/scroll-down.png">
+        <img class="half-image" id="scroll-down" src="img/scroll-down-white.png">
         </a>
         <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdev.twitter.com%2Fopensource&related=twitterapi&text=Students%20should%20pay%20less%20for%20loans&tw_p=tweetbutton&url=https%3A%2F%2Fdev.twitter.com%2Fopensource
 ">
-        <img class="half-image" id="twitter" src="img/twitter.png">
+        <img class="half-image" id="twitter" src="img/twitter-white.png">
         </a> 
-        	<div>
+
         	<h1>Interest rates for students are already too high.</h1>
+        	</div>
+        	<div>
                     <p>While students struggle to repay their debt,<br> the government is making money on its student loan programs.</p>
                 	<p>Estimated government profits on student loans in 2013:</p> 
                 	<p id="figure">$34 billion.<p>
@@ -213,44 +217,47 @@
         </a> 
         	<p class="bb-text" id="bb-text3">That's enough to pay for every college student's textbooks <strong>for a year.</strong></p>
         	<br>
-                	<img class="half-img" data-animation="fly-in-left" src="img/number-defs.png">
-                	<img class="half-img" data-animation="fly-in-right" src="img/equation.png">
+                	<img class="half-img" src="img/number-defs.png">
+                	<img class="half-img" src="img/equation.png">
             <br>
         </div>
         
         
         <div class="slide" id="warren">
         <a class="scroll-down nav-button" href="#the-plan">
+        <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdev.twitter.com%2Fopensource&related=twitterapi&text=Students%20should%20pay%20less%20for%20loans&tw_p=tweetbutton&url=https%3A%2F%2Fdev.twitter.com%2Fopensource
+">
+        <img class="half-image" id="twitter" src="img/twitter.png">
+        </a>
         <img class="half-image" id="scroll-down" src="img/scroll-down.png">
         </a>
         
         		<img id="warren-cutout" src="img/warren.png">
-                <div class="float-right" id="quote-text" style="padding-right:10%;">
-                <br>
-                <br>
-                <br>
-                <br>
+                <div id="quote-text">
                 <p id="right-quote">"The Federal Government is going to charge students interest rates nine times higher than the rates they charge the biggest banks.<br> The same banks that destroyed millions of jobs and nearly broke the economy. <strong>That isn't right.</strong>"</p>
                 <p>Sen. Elizabeth Warren</p>
 	            </div>
         </div>
         
         <div class="slide" id="the-plan">
+        <div class="slide-header">
         <a class="scroll-down nav-button" href="#take-action">
-        <img class="half-image" id="scroll-down" src="img/scroll-down.png">
+        <img class="half-image" id="scroll-down" src="img/scroll-down-white.png">
         </a>
         <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdev.twitter.com%2Fopensource&related=twitterapi&text=Students%20should%20pay%20less%20for%20loans&tw_p=tweetbutton&url=https%3A%2F%2Fdev.twitter.com%2Fopensource
 ">
-        <img class="half-image" id="twitter" src="img/twitter.png">
+        <img class="half-image" id="twitter" src="img/twitter-white.png">
         </a> 
-        	<img class="half-img"  id="the-fed" src="img/fed.png"><h1>The Plan:</h1><img class="half-img"  id="the-fed" src="img/college.png">
-        	<p id="plan1">Set interest rates for government loans to students at the same level as government loans to banks.</p>
-                	<p id="plan2">Fund the Department of Education's Stafford Loans program the same way that we fund government loans to big banks: The Federal Reserve.</p>
+        	<h1>The Plan:</h1>
+        	</div>
+        	<p class="plan" id="plan1">Set interest rates for government loans to students at the same level as government loans to banks.</p>
+            <p class="plan" id="plan2">Fund the Department of Education's Stafford Loans program the same way that we fund government loans to big banks: The Federal Reserve.</p>
         </div>
         
         
         
         <div class="slide" id="take-action">
+        <div class="slide-header" id="take-action-text">
         <a class="scroll-down nav-button" href="#title">
         <img class="half-image" id="scroll-down" src="img/scroll-up.png">
         </a>
@@ -258,7 +265,8 @@
 ">
         <img class="half-image" id="twitter" src="img/twitter-white.png">
         </a> 
-        	<h1 id="take-action-text">Tell Congress to take Action.</h1>
+        	<h1>Tell Congress to take Action.</h1>
+        	</div>
                 <br>
                 <br>
                 <div><p>Tell your representative that it's time to stop charging students and their families nine times as much for loans as big banks.</p>
