@@ -28,6 +28,15 @@ body {
 	text-align: center;
 	background-color: white;
 	color: #444;
+	opacity: 0;
+	transition: opacity .5s linear;
+    -webkit-transition: opacity .5s linear; /* Play with timing functions */
+    -moz-transition: opacity .5s linear;
+    -o-transition: opacity .5s linear;
+}
+
+.ease-in{
+	opacity: 1 !important;
 }
 
 button, input[type=text]{
@@ -124,7 +133,7 @@ p {
 }
 
 a, a:visited {
-	color: #1a4a6a;
+	color: #A6B1BB;
 	font-weight: bold;
 	font-style: italic;
 	text-shadow: none;
@@ -211,13 +220,13 @@ code {
 	opacity: .9;
 }
 
-#star{
+.star{
 	display: inline-block;
 	color: white;
 	font-size: 14px;
 	font-size: 1.4rem;
 	vertical-align: middle;
-	opacity: 1;
+	opacity: 0;
 	-webkit-transition: opacity 2s ease-in;
     -moz-transition: opacity 2s ease-in;
     -o-transition: opacity 2s ease-in;
@@ -340,12 +349,20 @@ float: left;
 	float: left;
 	padding-left: 2%;
 	position: relative;
+	transition: opacity .25s linear;
+    -webkit-transition: opacity .25s linear; /* Play with timing functions */
+    -moz-transition: opacity .25s linear;
+    -o-transition: opacity .25s linear;
 }
 
 #scroll-down:hover{
 	width:10%;
 	opacity: .5;
 	cursor: pointer;
+	transition: opacity .25s linear;
+    -webkit-transition: opacity .25s linear; /* Play with timing functions */
+    -moz-transition: opacity .25s linear;
+    -o-transition: opacity .25s linear;
 }
 
 /*----------------------------------------  Scroll-down  */
@@ -354,12 +371,20 @@ float: left;
 	float: right;
 	padding-right: 2%;
 	position: relative;
+	transition: opacity .25s linear;
+    -webkit-transition: opacity .25s linear; /* Play with timing functions */
+    -moz-transition: opacity .25s linear;
+    -o-transition: opacity .25s linear;
 }
 
 #twitter:hover{
 	width:10%;
 	opacity: .5;
 	cursor: pointer;
+	transition: opacity .25s linear;
+    -webkit-transition: opacity .25s linear; /* Play with timing functions */
+    -moz-transition: opacity .25s linear;
+    -o-transition: opacity .25s linear;
 }
 
 
@@ -444,7 +469,8 @@ float: left;
 /*---------------------------------------- Quote  */
 
 #warren-cutout{
-	max-width: 50%;
+	max-width: 40%;
+	float:left;
 }
 
 #right-quote{
@@ -486,7 +512,7 @@ float: left;
 }
 
 #take-action-text{
-	box-shadow: 7px 5px 10px rgba(0,0,0,0.6);
+	box-shadow: inset 1px 1px 5px rgba(0,0,0,0.6);
 }
 
 #countdown{
@@ -539,6 +565,34 @@ float: left;
 #credits a {
 	padding-right: 3px;
 }
+
+#zip-code{
+	max-width: 30%;
+	color: #3379B5;
+	font-family: "Open Sans", Arial, sans-serif;
+	text-indent: 6px;
+	border-radius: 3px;
+	border-color: #3379B5 !important;
+	
+}
+
+#zip-code:highlight{
+	max-width: 20%;
+}
+
+#find-rep{
+	padding-left: 5%;
+	max-width: 40%;
+	text-align: right;
+	font-size: 30px;
+	font-size: 3rem;
+}
+
+#find-rep p{
+	width:100%;
+
+}
+
 /*------------------------  BASE-REM SIZING  */
 
 
