@@ -83,7 +83,12 @@
     <script type="text/javascript">
 	        if (screen.width <= 699) {
 		        document.location = "/warren/m";
-		        }	 
+		        }
+		        
+		   if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/android/i)) || (navigator.userAgent.match(/blackberry/i)) || (navigator.userAgent.match(/palm/i))) {
+			   document.location="/warren/m";
+   				}
+   	 
 	</script>
 	 <script type="text/javascript">
 	        $(function() {
@@ -212,7 +217,8 @@
         	<h1>Interest rates for students are already too high.</h1>
                     <p class="animate-in">While students struggle to repay their debt,<br> the government is making money on its student loan programs.</p>
                 	<p class="animate-in">Estimated government profits on student loans in 2013:</p> 
-                	<p class="animate-build" data-build="1" id="figure">$34 billion.<p>
+                	<p class="animate-in" id="figure">$34 billion.<p>
+                	<div class="animate-build" data-build="1"></div>
             </div>
         </div>
         
@@ -277,12 +283,13 @@
         	<h1 id="take-action-text">Tell Congress to take Action.</h1>
                 <br>
                 <br>
-                <div class="float-left" id="find-rep"><p>Tell your representative that it's time to stop charging students and their families nine times as much for loans as big banks.</p>
-	                <form action="http://www.house.gov/htbin/findrep">
-	                	<label>
+                <div id="find-rep"><p>Tell your representative that it's time to stop charging students and their families nine times as much for loans as big banks.</p>
+	                <form id="zip-form" action="http://www.house.gov/htbin/findrep">
+	                	<div id="zip-label">
 	                		Search for your rep. by zip-code
-	                	<input  name="ZIP" id="zip-code" value="Search by zip-code">
-	                	</label>
+	                		</div>
+	                	<input  name="ZIP" id="zip-code">
+	                	
 	                	<button type="submit" id="zip-submit">Search</button>
 	                </form>
 	             </div>

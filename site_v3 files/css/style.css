@@ -42,7 +42,7 @@ body {
 button, input[type=text]{
 	font-family: "Open Sans", Arial, sans-serif !important;
 	color: #444;
-	border-radius: 5px;
+	border-radius: 3px;
 }
 
 input[type=text]:a{
@@ -54,6 +54,20 @@ button, html input[type="button"], input[type="reset"], input[type="submit"]{
 	color: white !important;
 	border-color: white !important;
 	border-width: .5px
+	-webkit-transition: opacity .25s linear;
+    -moz-transition: opacity .25s linear;
+    -o-transition: opacity .25s linear;
+    -ms-transition: opacity .25s linear;
+    transition: opacity .25s linear;
+}
+
+button:hover{
+	opacity: .8;
+	-webkit-transition: opacity .25s linear;
+    -moz-transition: opacity .25s linear;
+    -o-transition: opacity .25s linear;
+    -ms-transition: opacity .25s linear;
+    transition: opacity .25s linear;
 }
 
 label{
@@ -214,7 +228,7 @@ code {
 	left: 0;
 	z-index: 10;
 	background: #073664;
-	border-bottom: solid 3px #6ca5d9;
+	border-bottom: solid 3px #3379B5;
 	padding: 5px;
 	padding: .5rem;
 	opacity: .9;
@@ -570,10 +584,17 @@ float: left;
 	max-width: 30%;
 	color: #3379B5;
 	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 30px;
+	font-size: 3rem;
 	text-indent: 6px;
 	border-radius: 3px;
 	border-color: #3379B5 !important;
+	text-align: center;
 	
+}
+
+#zip-form{
+	text-align: center;
 }
 
 #zip-code:highlight{
@@ -581,16 +602,41 @@ float: left;
 }
 
 #find-rep{
-	padding-left: 5%;
 	max-width: 40%;
-	text-align: right;
+	text-align: left;
 	font-size: 30px;
 	font-size: 3rem;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 #find-rep p{
 	width:100%;
+	color: white;
+	text-shadow: 0 1px 1px black !important;
 
+}
+
+#zip-label{
+	font-size: 20px;
+	font-size: 2rem;
+	line-height: 60px;
+	line-height: 6rem;
+	color: white;
+	text-shadow: 0 1px 1px black !important;
+}
+
+.twitter-share{
+	max-width: 5%;
+}
+
+#twitter-share-text{
+	vertical-align: middle;
+}
+
+.word-out-link p{
+	vertical-align: middle;
+	display: inline;
 }
 
 /*------------------------  BASE-REM SIZING  */

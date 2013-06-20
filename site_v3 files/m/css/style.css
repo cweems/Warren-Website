@@ -508,13 +508,13 @@ float: left;
 
 .plan{
 	text-align: left;
-	max-width: 900px;
-	max-width: 90rem;
+	max-width: 80%;
+	font-size: 50px;
+	font-size: 5rem;
+	padding-left: 4%;
 }
 
-#the-plan{
 
-}
 
 #the-fed{
 	width: 10%;
@@ -583,6 +583,53 @@ float: left;
 #credits a {
 	padding-right: 3px;
 }
+
+#zip-code{
+	max-width: 30%;
+	color: #3379B5;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 30px;
+	font-size: 3rem;
+	text-indent: 6px;
+	border-radius: 3px;
+	border-color: #3379B5 !important;
+	text-align: center;
+	
+}
+
+#zip-form{
+	text-align: center;
+}
+
+#zip-code:highlight{
+	max-width: 20%;
+}
+
+#find-rep{
+	max-width: 80%;
+	text-align: left;
+	font-size: 30px;
+	font-size: 3rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#find-rep p{
+	width:100%;
+	color: white;
+	text-shadow: 0 1px 1px black !important;
+
+}
+
+#zip-label{
+	font-size: 40px;
+	font-size: 4rem;
+	line-height: 60px;
+	line-height: 6rem;
+	color: white;
+	text-shadow: 0 1px 1px black !important;
+}
+
 /*------------------------  BASE-REM SIZING  */
 
 
